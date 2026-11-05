@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Off the clock · David Yu</title>
+  <meta name="description" content="What I do when I'm not coding: skateboarding, fishing, hiking, cooking, and anime.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..500,0..100,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header data-header></header>
+
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">Outside of work</span>
+      <h1>Off the clock</h1>
+      <p>This is what I'm up to when I'm away from the keyboard. Come say hi if you see me at the skatepark.</p>
+    </div>
+  </section>
+
+  <nav class="subnav" aria-label="Hobbies">
+    <div class="wrap">
+      <a href="#skateboarding">Skateboarding</a>
+      <a href="#fishing">Fishing</a>
+      <a href="#hiking">Hiking</a>
+      <a href="#cooking">Cooking</a>
+      <a href="#anime">Anime</a>
+    </div>
+  </nav>
+
+  <!--
+    HOW TO ADD PHOTOS AND VIDEOS:
+    Drop files into assets/hobbies/ with the file names below (or change the src).
+    Missing files show a dashed placeholder that tells you what to add.
+    .media-main holds one big photo OR a <video>. .thumbs holds three small photos.
+    Videos: .mp4, short, ideally under ~20 MB.
+  -->
+  <main>
+    <div class="band" style="padding:0">
+      <div class="wrap">
+
+        <section class="feature reveal" id="skateboarding">
+          <div>
+            <span class="eyebrow">The one that taught me to fail</span>
+            <h2>Skateboarding</h2>
+            <p>
+              Skating taught me to get comfortable with failing. You try the same trick a hundred times,
+              change one small thing, and eventually it works. That's also exactly what debugging feels like.
+            </p>
+            <p>
+              It's also how I meet people. A skatepark brings together people from every background, and
+              nobody cares where you came from, only whether you got back up. At UCSD I help run the Skate Club,
+              plan sessions and house shows, and teach beginners how to stand on a board for the first time.
+            </p>
+            <div class="facts">
+              <span class="fact">Event organizer, Skate Club at UCSD</span>
+              <!-- [ADD] <span class="fact">Working on: your trick</span> -->
+            </div>
+          </div>
+          <div>
+            <div class="media-main tall">
+              <video controls muted playsinline preload="metadata" poster="assets/hobbies/skate-clip.jpg" aria-label="Me grinding a ledge at the skatepark">
+                <source src="assets/hobbies/skate-clip.mp4" type="video/mp4">
+              </video>
+            </div>
+            <!-- Short looping clips: they play silently on their own -->
+            <div class="thumbs">
+              <video autoplay muted loop playsinline preload="metadata" poster="assets/hobbies/skate-2.jpg" aria-label="Skating at the park">
+                <source src="assets/hobbies/skate-2.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop playsinline preload="metadata" poster="assets/hobbies/skate-3.jpg" aria-label="Skating around campus">
+                <source src="assets/hobbies/skate-3.mp4" type="video/mp4">
+              </video>
+              <video autoplay muted loop playsinline preload="metadata" poster="assets/hobbies/skate-4.jpg" aria-label="Riding at night">
+                <source src="assets/hobbies/skate-4.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature flip reveal" id="fishing">
+          <div>
+            <span class="eyebrow">The quiet one</span>
+            <h2>Fishing</h2>
+            <p>
+              Fishing is the opposite of a dinner rush. You get there early, cast, and wait. It's one of the
+              few times I can go hours without looking at a screen, and I'm usually fine if nothing bites.
+              <!-- [ADD] where you like to fish, and your best catch -->
+            </p>
+          </div>
+          <div>
+            <div class="media-main"><img src="assets/hobbies/fishing-1.jpg" alt="Me holding a sunfish I caught at a lake" loading="lazy"></div>
+            <div class="thumbs">
+              <img src="assets/hobbies/fishing-2.jpg" alt="A silvery fish caught off the jetty" loading="lazy">
+              <img src="assets/hobbies/fishing-3.jpg" alt="An opaleye caught off the rocks" loading="lazy">
+              <img src="assets/hobbies/fishing-4.jpg" alt="My rod pointed out over the ocean from the jetty" loading="lazy">
+            </div>
+          </div>
+        </section>
+
+        <section class="feature reveal" id="hiking">
+          <div>
+            <span class="eyebrow">The reset button</span>
+            <h2>Hiking</h2>
+            <p>
+              When school, work, and research pile up, I go for a hike. Being outside with friends, a little
+              out of breath, clears my head better than anything else I've found.
+              <!-- [ADD] favorite trail, hardest hike, who you go with -->
+            </p>
+
+          </div>
+          <div>
+            <div class="media-main tall">
+              <video controls muted playsinline preload="metadata" poster="assets/hobbies/hiking-clip.jpg" aria-label="Wading up a river through a canyon with friends">
+                <source src="assets/hobbies/hiking-clip.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </section>
+
+        <section class="feature flip reveal" id="cooking">
+          <div>
+            <span class="eyebrow">Where it all started</span>
+            <h2>Cooking</h2>
+            <p>
+              I spent four years on the line, first at a small curry shop and then on the wok at Din Tai Fung.
+              I don't cook professionally anymore, but I still cook all the time, mostly for friends. The
+              knife skills never went away.
+              <!-- [ADD] your signature dish, or what friends always ask you to make -->
+            </p>
+            <p>Read how the kitchen shaped me in my <a href="journey.html#kitchen">story</a>.</p>
+          </div>
+          <div>
+            <div class="media-main tall"><img src="assets/hobbies/cooking-1.jpg" alt="A heart made of diced onions on a cutting board at Champion's Curry" loading="lazy"></div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+
+    <section class="wrap section reveal" id="anime" style="scroll-margin-top:130px">
+      <span class="eyebrow">How I wind down</span>
+      <h2>Anime</h2>
+      <p class="muted" style="max-width:620px">After a long shift or a long problem set, I put on an episode. Here are a few favorites if you're looking for something to watch.</p>
+      <div class="anime-cards">
+        <div class="anime-card">
+          <span class="eyebrow">All-time favorite</span>
+          <h3>[Title]</h3>
+          <p>[One line on why]</p>
+        </div>
+        <div class="anime-card">
+          <span class="eyebrow">Watching now</span>
+          <h3>[Title]</h3>
+          <p>[Episode / thoughts so far]</p>
+        </div>
+        <div class="anime-card">
+          <span class="eyebrow">Start here</span>
+          <h3>[Title]</h3>
+          <p>[Your pick for someone new to anime]</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

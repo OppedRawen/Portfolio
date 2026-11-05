@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume · David Yu</title>
+  <meta name="description" content="David Yu's resume: skills, education, experience, leadership, and projects.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..500,0..100,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header data-header></header>
+
+  <section class="page-head">
+    <div class="wrap">
+      <span class="eyebrow">The short version</span>
+      <h1>Resume</h1>
+      <p>Everything in one place. For the story behind it, read my <a href="journey.html" style="color:var(--honey)">journey</a>.</p>
+      <div class="btn-row" style="margin-top:28px">
+        <!-- Put your one-page PDF resume at assets/resume.pdf -->
+        <a class="btn btn-clay" href="assets/resume.pdf" download="David_Yu_Resume.pdf">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+          Download PDF
+        </a>
+        <a class="btn" style="background:transparent;color:var(--on-band);border-color:rgba(248,234,216,.35)" href="assets/resume.pdf" target="_blank" rel="noopener">Open in new tab</a>
+      </div>
+    </div>
+  </section>
+
+  <nav class="subnav" aria-label="Resume sections">
+    <div class="wrap">
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#leadership">Leadership</a>
+      <a href="#projects">Projects</a>
+    </div>
+  </nav>
+
+  <!--
+    HOW THE SKILL HIGHLIGHT WORKS:
+    Each skill button has data-skill="python". Each entry lists the skills it used in
+    data-skills="python, sql". Click a skill and matching entries light up.
+  -->
+  <main class="wrap" style="padding-bottom:88px">
+
+    <section class="res-section" id="skills">
+      <h2>Skills</h2>
+      <dl>
+        <div class="skill-group">
+          <dt>Languages</dt>
+          <dd>
+            <button class="skill" data-skill="python" aria-pressed="false">Python</button>
+            <button class="skill" data-skill="sql" aria-pressed="false">SQL</button>
+            <button class="skill" data-skill="javascript" aria-pressed="false">JavaScript / HTML / CSS</button>
+            <button class="skill" data-skill="php" aria-pressed="false">PHP</button>
+          </dd>
+        </div>
+        <div class="skill-group">
+          <dt>Data and stats</dt>
+          <dd>
+            <button class="skill" data-skill="pandas" aria-pressed="false">pandas / NumPy</button>
+            <button class="skill" data-skill="stats" aria-pressed="false">Hypothesis testing</button>
+            <button class="skill" data-skill="modeling" aria-pressed="false">Regression and classification</button>
+            <button class="skill" data-skill="viz" aria-pressed="false">Data visualization</button>
+          </dd>
+        </div>
+        <div class="skill-group">
+          <dt>ML and AI</dt>
+          <dd>
+            <button class="skill" data-skill="pytorch" aria-pressed="false">PyTorch</button>
+            <button class="skill" data-skill="embeddings" aria-pressed="false">Embeddings and vector search</button>
+            <button class="skill" data-skill="llm" aria-pressed="false">LLM APIs (Gemini)</button>
+          </dd>
+        </div>
+        <div class="skill-group">
+          <dt>Web and mobile</dt>
+          <dd>
+            <button class="skill" data-skill="react" aria-pressed="false">React / React Native</button>
+            <button class="skill" data-skill="node" aria-pressed="false">Node.js / Express</button>
+            <button class="skill" data-skill="fastapi" aria-pressed="false">FastAPI</button>
+            <button class="skill" data-skill="laravel" aria-pressed="false">Laravel / Livewire</button>
+            <button class="skill" data-skill="firebase" aria-pressed="false">Firebase</button>
+          </dd>
+        </div>
+        <div class="skill-group">
+          <dt>People</dt>
+          <dd>
+            <button class="skill" data-skill="teaching" aria-pressed="false">Teaching</button>
+            <button class="skill" data-skill="events" aria-pressed="false">Event planning</button>
+            <button class="skill" data-skill="pressure" aria-pressed="false">Calm under pressure</button>
+          </dd>
+        </div>
+      </dl>
+      <p class="skill-hint">Click a skill to see where I used it. I also use Java, R, Git, Linux, Figma, MySQL, MongoDB, and ChromaDB. I speak English, Mandarin, and Cantonese.</p>
+    </section>
+
+    <section class="res-section" id="education">
+      <h2>Education</h2>
+      <div class="entry" data-skills="python, pandas, stats, modeling, viz">
+        <h3>University of California, San Diego</h3><span class="date">Expected March 2028</span>
+        <div class="sub">B.S. Data Science · La Jolla, CA</div>
+        <ul><li>Coursework: Probabilistic modeling for AI, theoretical foundations of data science, Bayesian statistics, statistical methods, data structures and algorithms</li></ul>
+      </div>
+      <div class="entry" data-skills="">
+        <h3>Irvine Valley College</h3><span class="date">May 2025</span>
+        <div class="sub">A.S. Computer Science · Irvine, CA</div>
+        <ul><li>Coursework: Object-oriented programming, data structures, discrete math, calculus, linear algebra</li></ul>
+      </div>
+      <div class="entry" data-skills="javascript, react, node">
+        <h3>UCI Coding Bootcamp</h3><span class="date">6-month program</span>
+        <div class="sub">Full-stack web development · Irvine, CA</div>
+        <ul><li>Built 4+ MERN applications on agile teams, from Figma mockup to working app, collaborating through Git and GitHub</li></ul>
+      </div>
+    </section>
+
+    <section class="res-section" id="experience">
+      <h2>Experience</h2>
+      <div class="entry" data-skills="python">
+        <h3>Undergraduate Research Assistant, Seibert Lab</h3><span class="date">Aug 2026 – Present</span>
+        <div class="sub">UC San Diego, Dept. of Radiation Medicine and Applied Sciences · La Jolla, CA</div>
+        <ul>
+          <li>Automated QC and transfer of 30+ patient datasets (~4 TB) to Stanford with a Python script, replacing manual transfers</li>
+          <li>Performed ARIA matrix registration on 10 patients' scans for a prostate MRI–pathology correlation study</li>
+          <li>Run quality control on registration outputs, flagging misaligned or failed cases for re-processing</li>
+        </ul>
+      </div>
+      <div class="entry" data-skills="python, pandas, stats">
+        <h3>HDSI Undergraduate Scholar</h3><span class="date">Sep 2026 – Present</span>
+        <div class="sub">Halıcıoğlu Data Science Institute, UC San Diego · La Jolla, CA</div>
+        <ul>
+          <li>Partnering with Data Science Alliance, the Lucky Duck Foundation, and the City of San Diego to predict homeless-system inflow</li>
+          <li>Analyzing unemployment, low-income housing, shelter-inflow, and infrastructure data, with findings to be presented to the City</li>
+        </ul>
+      </div>
+      <div class="entry" data-skills="python, sql, php, laravel">
+        <h3>Software Engineering Intern, Drysci</h3><span class="date">Jun 2025 – Aug 2025</span>
+        <div class="sub">Irvine, CA</div>
+        <ul>
+          <li>Built internal Python tools that convert 15+ client website templates from JSON into SQL schema, replacing manual setup</li>
+          <li>Developed Laravel/Livewire components, PHP validation, and SQL schema for client form workflows on a 4-person team</li>
+          <li>Debugged routing, namespace, validation, and form-submission bugs across Laravel, PHP, and SQL layers</li>
+        </ul>
+      </div>
+      <div class="entry" data-skills="teaching">
+        <h3>Math Tutor</h3><span class="date">Sep 2023 – Nov 2024</span>
+        <div class="sub">Private clients · Irvine, CA</div>
+        <ul><li>Tutored algebra, geometry, and calculus with lessons and practice plans built around each student</li></ul>
+      </div>
+      <div class="entry" data-skills="pressure">
+        <h3>Food Busser, Katsuya</h3><span class="date">Jan 2026 – Present</span>
+        <div class="sub">La Jolla, CA</div>
+        <ul><li>Keep a high-volume dining room turning during peak service while carrying a full course load and research</li></ul>
+      </div>
+      <div class="entry" data-skills="pressure">
+        <h3>Wok Chef, Din Tai Fung</h3><span class="date">Mar 2023 – Jun 2025</span>
+        <div class="sub">Costa Mesa, CA</div>
+        <ul><li>Ran a wok station in a high-volume kitchen, managing simultaneous orders with speed and consistency</li></ul>
+      </div>
+      <div class="entry" data-skills="pressure, teaching">
+        <h3>Assistant Kitchen Manager, Champion's Curry</h3><span class="date">Jun 2021 – Mar 2023</span>
+        <div class="sub">Irvine, CA</div>
+        <ul><li>Trained new staff, ran opening and closing routines and inventory, and helped plan promotions and small events</li></ul>
+      </div>
+    </section>
+
+    <section class="res-section" id="leadership">
+      <h2>Leadership</h2>
+      <div class="entry" data-skills="events, teaching">
+        <h3>Event Organizer, Skate Club at UC San Diego</h3><span class="date">Sep 2025 – Present</span>
+        <div class="sub">La Jolla, CA</div>
+        <ul>
+          <li>Plan and run socials, house shows, and group skate sessions, from venue selection to day-of coordination</li>
+          <li>Teach beginners to skate and help new members of every background feel welcome</li>
+        </ul>
+      </div>
+      <div class="entry" data-skills="teaching, events, react, javascript">
+        <h3>Project Director, IVC Computer Science Club</h3><span class="date">Aug 2023 – May 2024</span>
+        <div class="sub">Irvine, CA</div>
+        <ul>
+          <li>Organized 10+ workshops averaging 15+ attendees on programming fundamentals, React, Git, and project building</li>
+          <li>Mentored student teams from project idea to working demo through milestones and code review</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="res-section" id="projects">
+      <h2>Projects</h2>
+      <div class="entry" data-skills="python, pytorch, llm, stats">
+        <h3>The RDA · <a href="https://devpost.com/software/the-rda" target="_blank" rel="noopener">Devpost</a> · <a href="https://github.com/OppedRawen/FREDYYY" target="_blank" rel="noopener">GitHub</a></h3><span class="date">Oct 2026</span>
+        <div class="sub">Five Nights with AI hackathon · camera-anomaly detection</div>
+        <ul>
+          <li>Started and co-built a ResNet18 camera-anomaly detector trained on Gemini frame labels, with no LLM calls at inference</li>
+          <li>Reached 0.997 validation F1 on 1,400 clips; Gemini labels added +1.1 F1 on a 1,000-clip test (95% CI [+0.1, +2.2])</li>
+        </ul>
+        <div class="pills"><span class="pill">PyTorch</span><span class="pill">ResNet18</span><span class="pill">Gemini API</span><span class="pill">Pydantic</span></div>
+      </div>
+      <div class="entry" data-skills="python, pandas, stats, modeling, viz">
+        <h3>League of Legends Early Game Analysis · <a href="https://oppedrawen.github.io/League-of-Legends-Analysis" target="_blank" rel="noopener">Site</a></h3><span class="date">Mar 2026</span>
+        <div class="sub">Can a CS lead offset an early kill deficit?</div>
+        <ul>
+          <li>Analyzed ~18,400 pro matches: a 15-minute CS lead nearly offsets a kill deficit (49.5% vs. 50.9% win rate; permutation test, p &lt; 0.001)</li>
+          <li>Predicted outcomes from 15-minute game state with logistic regression (73.4%) and a tuned decision tree (74.1%), avoiding leakage</li>
+        </ul>
+        <div class="pills"><span class="pill">pandas</span><span class="pill">statsmodels</span><span class="pill">Matplotlib</span></div>
+      </div>
+      <div class="entry" data-skills="python, pandas, stats, viz">
+        <h3>STEM and Pell Grant Analysis</h3><span class="date">Nov – Dec 2025</span>
+        <div class="sub">4-person research team · College Scorecard data</div>
+        <ul>
+          <li>Analyzed 1,600+ institutions and found a small negative association between Pell Grant rate and STEM degree share, separating statistical from practical significance</li>
+        </ul>
+        <div class="pills"><span class="pill">pandas</span><span class="pill">SciPy</span><span class="pill">statsmodels</span></div>
+      </div>
+      <div class="entry" data-skills="python, embeddings, fastapi, react, sql">
+        <h3>SkillBridge · <a href="https://github.com/OppedRawen/SkillBridge" target="_blank" rel="noopener">GitHub</a></h3><span class="date">Dec 2024 – Feb 2025</span>
+        <div class="sub">AI skill-gap analysis for job seekers</div>
+        <ul>
+          <li>Indexed 15,000+ skills in ChromaDB and matched resumes to job descriptions with sentence embeddings and lightweight NER</li>
+          <li>Served results through FastAPI to a React dashboard with category filters and CSV export</li>
+        </ul>
+        <div class="pills"><span class="pill">Hugging Face</span><span class="pill">ChromaDB</span><span class="pill">FastAPI</span><span class="pill">React</span><span class="pill">MySQL</span></div>
+      </div>
+      <div class="entry" data-skills="react, node, firebase, llm, javascript">
+        <h3>EcoTracker · <a href="https://github.com/OppedRawen/Eco-Friendly-App" target="_blank" rel="noopener">GitHub</a></h3><span class="date">Nov 2024</span>
+        <div class="sub">1st place, Adventure category, HackSC 2024</div>
+        <ul>
+          <li>Built a mobile app that gamifies recycling with streaks and rankings on a 4-person team in 24 hours</li>
+          <li>Verified submitted eco-action photos server-side with Firebase Functions and the Gemini API</li>
+        </ul>
+        <div class="pills"><span class="pill">React Native</span><span class="pill">Node.js</span><span class="pill">Firebase</span><span class="pill">Gemini API</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-footer></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

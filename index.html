@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>David Yu</title>
+  <meta name="description" content="David Yu: data science student at UC San Diego, former line cook, and builder of things. This is the story of how I got here.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Fraunces:opsz,wght,SOFT,WONK@9..144,300..500,0..100,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header data-header></header>
+
+  <!-- Hero photo: put a wide landscape shot at assets/images/hero.jpg -->
+  <section class="hero">
+    <div class="wrap">
+      <h1>David<br>Yu</h1>
+      <p>Data science student at UC San Diego. Skater, fisher, home cook, and part-time resident of Skyrim.</p>
+    </div>
+    <span class="scroll-cue">Scroll ↓</span>
+  </section>
+
+  <main>
+    <section class="wrap intro">
+      <!-- Your headshot: assets/images/me.jpg -->
+      <img class="portrait" src="assets/images/me.jpg" alt="Portrait of David Yu">
+      <div>
+        <span class="eyebrow">Hi, I'm David</span>
+        <p class="statement">
+          I like skateboarding, fishing, video games and anime. I also spent 4 years working in the kitchen as a line cook, and I love to eat, explore, and do side quests.
+        </p>
+        <div class="btn-row">
+          <a class="btn btn-dark" href="journey.html">Read my story →</a>
+          <a class="btn" href="resume.html">Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fun stats. Swap in any others you like; keep the labels short. -->
+    <section class="stats">
+      <div class="wrap">
+        <div class="stat"><b>854 hrs</b><span>spent in Skyrim.</span></div>
+        <div class="stat"><b>3</b><span>skateboard decks snapped</span></div>
+        <div class="stat"><b>Too many</b><span>fishing lines snagged on rocks</span></div>
+        <div class="stat"><b>3½</b><span>languages: English, Mandarin, Cantonese, and kitchen Spanish</span></div>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <div class="section-head">
+        <h2>Things I've built</h2>
+        <a href="resume.html#projects">All projects →</a>
+      </div>
+      <div class="rows">
+        <a class="row reveal" href="https://devpost.com/software/the-rda" target="_blank" rel="noopener"><span class="yr">2026</span><span class="ttl">The RDA: spotting camera anomalies with an LLM as the teacher</span><span class="meta">PyTorch · ResNet18 · Gemini API</span></a>
+        <a class="row reveal" href="https://oppedrawen.github.io/League-of-Legends-Analysis" target="_blank" rel="noopener"><span class="yr">2026</span><span class="ttl">Does farming make up for losing early fights?</span><span class="meta">pandas · statsmodels · hypothesis testing</span></a>
+        <a class="row reveal" href="https://github.com/OppedRawen/SkillBridge" target="_blank" rel="noopener"><span class="yr">2025</span><span class="ttl">SkillBridge: what your resume is missing</span><span class="meta">FastAPI · React · ChromaDB · Hugging Face</span></a>
+        <a class="row reveal" href="https://github.com/OppedRawen/Eco-Friendly-App" target="_blank" rel="noopener"><span class="yr">2024</span><span class="ttl">EcoTracker: 1st place at HackSC</span><span class="meta">React Native · Firebase · Gemini API</span></a>
+      </div>
+    </section>
+
+    <section class="band">
+      <div class="wrap">
+        <span class="eyebrow">Outside of work</span>
+        <h2 style="max-width:680px">Skateboarding, fishing, hiking, cooking, and probably too much anime.</h2>
+        <p style="max-width:560px">This is what I do when I'm not coding. A lot of it is about falling down and getting back up.</p>
+        <a class="btn" href="hobbies.html">See more →</a>
+
+        <!-- Teaser photos: each links to its section -->
+        <div class="mosaic">
+          <a class="tall" href="hobbies.html#skateboarding"><img src="assets/hobbies/skate-clip.jpg" alt="Me grinding a ledge at the skatepark" loading="lazy"><span class="label">Skateboarding</span></a>
+          <a class="wide" href="hobbies.html#fishing"><img src="assets/hobbies/fishing-1.jpg" alt="Me holding a sunfish at a lake" loading="lazy"><span class="label">Fishing</span></a>
+          <a href="hobbies.html#cooking"><img src="assets/hobbies/cooking-1.jpg" alt="A heart made of diced onions" loading="lazy"><span class="label">Cooking</span></a>
+          <a href="hobbies.html#hiking"><img src="assets/hobbies/hiking-clip.jpg" alt="Wading up a canyon river" loading="lazy"><span class="label">Hiking</span></a>
+          <a class="wide" href="journey.html#ivc"><img src="assets/journey/cs-club.jpg" alt="IVC CS Club members after a workshop" loading="lazy"><span class="label">Teaching at the IVC CS Club</span></a>
+          <a href="journey.html#ivc"><img src="assets/journey/hackathon-bear.jpg" alt="Me at Cal Hacks 11" loading="lazy"><span class="label">Hackathons</span></a>
+        </div>
+      </div>
+    </section>
+
+    <figure class="quote wrap">
+      <blockquote>“Every day at my first kitchen job, my chives came out a little finer than the day before. That's how I try to get better at everything.”</blockquote>
+      <cite>Something I learned at Champion's Curry</cite>
+    </figure>
+  </main>
+
+  <footer data-footer></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
